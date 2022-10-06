@@ -1,103 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COFFEE HOUSE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo">COFFEE HOUSE</a>
+            <a href="#" class="title">COFFEE HOUSE</a>
             <ul class="menu">
                 <li class="menu__item"><a href="#home">HOME</a></li>
                 <li class="menu__item"><a href="#story">STORY</a></li>
                 <li class="menu__item"><a href="#blog">BLOG</a></li>
                 <li class="menu__item"><a href="#subscribe">SUBSCRIBE</a></li>
             </ul>
+            <button class="burger">
+                <span class="burger__item"></span>
+            </button>
         </nav>
+
     </header>
 
     <main>
         <div class="intro" id="home">
-            <div class="intro__text">TAKE YOUR TIME</div>
+            <div class="container center">
+                <div class="intro__text">TAKE YOUR TIME</div>
+            </div>
         </div>
-    
+
         <div class="story" id="story">
-            <h2 class="story__title">STORY</h2>
-            <div class="story__content">
-                <img class="story__img" src="img/story-img.jpg" alt="coffee making">
-                <div class="story__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, 
-                        vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend 
-                        euismod. Class aptent taciti sociosqu ad litora torquent per 
-                        conubia nostra, per inceptos himenaeos. Praesent mattis ultrices 
-                        est, congue ullamcorper erat bibendum pulvinar. In accumsan 
-                        dapibus accumsan. Maecenas semper est ut nunc feugiat, vel 
-                        ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra 
-                        risus.</p>
+            <div class="container">
+                <h2 class="title">STORY</h2>
+                <div class="story__content">
+                    <div class="story__img-content">
+                        <img class="story__img" src="img/story-img.jpg" alt="coffee making">
+                    </div>
+                    <div class="story__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet,
+                            vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend
+                            euismod. Class aptent taciti sociosqu ad litora torquent per
+                            conubia nostra, per inceptos himenaeos. Praesent mattis ultrices
+                            est, congue ullamcorper erat bibendum pulvinar. In accumsan
+                            dapibus accumsan. Maecenas semper est ut nunc feugiat, vel
+                            ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra
+                            risus.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    
+
         <div class="blog" id="blog">
-            <h2 class="blog__title">BLOG</h2>
-            <div class="blog__cards">
-                <div class="card">
-                    <h3 class="card__title">Daily Coffee News</h3>
-                    <img class="card__img" src="img/blog-img-1.jpg" alt="coffee preparation method">
-                    <div class="card__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aenean varius eget arcu quis cursus. Nunc id tortor 
-                            imperdiet, vestibulum orci sed, gravida orci. Cras a enim 
-                            ac elit eleifend euismod.</p>
+            <div class="container">
+                <h2 class="title">BLOG</h2>
+                <div class="blog__cards">
+                    <div class="card">
+                        <h3 class="card__title">Daily Coffee News</h3>
+                        <img class="card__img" src="img/blog-img-1.jpg" alt="coffee preparation method">
+                        <div class="card__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean varius eget arcu quis cursus. Nunc id tortor
+                                imperdiet, vestibulum orci sed, gravida orci. Cras a enim
+                                ac elit eleifend euismod.
+                            </p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="card">
-                    <h3 class="card__title">Dutch Coffee Chains</h3>
-                    <img class="card__img" src="img/blog-img-2.jpg" alt="strong coffee">
-                    <div class="card__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aenean varius eget arcu quis cursus. Nunc id tortor 
-                            imperdiet, vestibulum orci sed, gravida orci. Cras a enim 
-                            ac elit eleifend euismod.</p>
+
+                    <div class="card">
+                        <h3 class="card__title">Dutch Coffee Chains</h3>
+                        <img class="card__img" src="img/blog-img-2.jpg" alt="strong coffee">
+                        <div class="card__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean varius eget arcu quis cursus. Nunc id tortor
+                                imperdiet, vestibulum orci sed, gravida orci. Cras a enim
+                                ac elit eleifend euismod.
+                            </p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="card">
-                    <h3 class="card__title">Start Up In Minneapolis</h3>
-                    <img class="card__img" src="img/blog-img-3.jpg" alt="coffee machine">
-                    <div class="card__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aenean varius eget arcu quis cursus. Nunc id tortor 
-                            imperdiet, vestibulum orci sed, gravida orci. Cras a enim 
-                            ac elit eleifend euismod.</p>
+
+                    <div class="card">
+                        <h3 class="card__title">Start Up In Minneapolis</h3>
+                        <img class="card__img" src="img/blog-img-3.jpg" alt="coffee machine">
+                        <div class="card__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean varius eget arcu quis cursus. Nunc id tortor
+                                imperdiet, vestibulum orci sed, gravida orci. Cras a enim
+                                ac elit eleifend euismod.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
-        <div class="subscribe" id="subscribe">
-            <h2 class="subscribe__title">SUBSCRIBE</h2>
-            <form>
-                <input class="email__input" type="email" placeholder="enter your email">
-                <button class="submit__button" type="submit">SUBMIT</button>
-            </form>
+        <div class="subscribe " id="subscribe">
+            <div class="container">
+                <h2 class="title title--white">SUBSCRIBE</h2>
+                <form>
+                    <input class="email__input" type="email" placeholder="enter your email">
+                    <button class="submit__button" type="submit">SUBMIT</button>
+                </form>
+            </div>
         </div>
-    
+
         <div class="copyrigh">
             <p>© COPYRIGHT 2021</p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
