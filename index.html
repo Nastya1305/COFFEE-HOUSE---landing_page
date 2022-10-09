@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav">
             <a href="#" class="title">COFFEE HOUSE</a>
-            <ul class="menu">
-                <li class="menu__item"><a href="#home">HOME</a></li>
-                <li class="menu__item"><a href="#story">STORY</a></li>
-                <li class="menu__item"><a href="#blog">BLOG</a></li>
-                <li class="menu__item"><a href="#subscribe">SUBSCRIBE</a></li>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" data-scroll="home">HOME</a></li>
+                <li class="menu__item"><a href="#" data-scroll="story">STORY</a></li>
+                <li class="menu__item"><a href="#" data-scroll="blog">BLOG</a></li>
+                <li class="menu__item"><a href="#" data-scroll="subscribe">SUBSCRIBE</a></li>
             </ul>
-            <button class="burger">
+            <button class="burger" type="button" id="navToggle">
                 <span class="burger__item"></span>
             </button>
         </nav>
@@ -119,6 +119,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
