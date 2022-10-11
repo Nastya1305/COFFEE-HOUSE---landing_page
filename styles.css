@@ -211,6 +211,7 @@ body {
 }
 
 .blog__card {
+    width: 30%;
     margin: 0 7px 15px;
 }
 
@@ -218,7 +219,6 @@ body {
 -----------------------------------------*/
 
 .card {
-    width: 30%;
     padding: 20px;
 
     background: #FFFFFF;
@@ -399,11 +399,13 @@ body {
 -----------------------------------------*/
 
 @media (max-width: 991px) {
+
+    /* -----------------------------------------------------title */
     .title {
         font-size: 28px;
     }
 
-    /* nav */
+    /* -----------------------------------------------------menu */
     .menu {
         display: none;
         position: absolute;
@@ -431,7 +433,7 @@ body {
         display: block;
     }
 
-    /* intro */
+    /* -----------------------------------------------------intro */
     .intro {
         height: auto;
         padding: 120px 0;
@@ -441,7 +443,7 @@ body {
         font-size: 40px;
     }
 
-    /* story */
+    /* -----------------------------------------------------story */
     .story__title {
         margin-bottom: 35px;
     }
@@ -450,7 +452,7 @@ body {
         margin: 0 35px;
     }
 
-    /* blog */
+    /* -----------------------------------------------------blog */
     .blog__title {
         margin-bottom: 35px;
     }
@@ -465,7 +467,7 @@ body {
 
 @media (max-width: 960px) {
 
-    /* story */
+    /* -----------------------------------------------------story */
     .story__content {
         flex-direction: column;
     }
@@ -482,7 +484,7 @@ body {
         min-width: 100%;
     }
 
-    /* blog */
+    /* -----------------------------------------------------blog */
     .blog__content {
         justify-content: center;
     }
@@ -491,7 +493,7 @@ body {
         width: 70%;
     }
 
-    /* subscribe */
+    /* -----------------------------------------------------subscribe */
     .subscribe>.container {
         padding: 35px;
     }
@@ -501,7 +503,7 @@ body {
 
 @media (max-width: 768px) {
 
-    /* blog */
+    /* -----------------------------------------------------blog */
     .card {
         width: 90%;
     }
@@ -511,7 +513,7 @@ body {
 
 @media (max-width: 414px) {
 
-    /* header */
+    /* -----------------------------------------------------header */
     .header__nav {
         margin: 0 40px;
     }
@@ -520,8 +522,8 @@ body {
         padding: 10px 40px;
     }
 
-    /* blog */
-    .card {
+    /* -----------------------------------------------------blog */
+    .blog__card {
         width: 100%;
     }
 }
@@ -538,7 +540,7 @@ body {
         padding: 30px 0;
     }
 
-    /* header */
+    /* -----------------------------------------------------header */
     .header {
         height: 80px;
     }
@@ -548,7 +550,7 @@ body {
         padding-top: 80px;
     }
 
-    /* intro */
+    /* -----------------------------------------------------intro */
     .intro {
         padding: 80px 0;
     }
@@ -557,7 +559,7 @@ body {
         font-size: 32px;
     }
 
-    /* story */
+    /* -----------------------------------------------------story */
     .story__content {
         margin: 0 25px;
     }
@@ -566,7 +568,7 @@ body {
         font-size: 18px;
     }
 
-    /* blog */
+    /* -----------------------------------------------------blog */
     .blog__title {
         margin-bottom: 30px;
     }
@@ -575,7 +577,7 @@ body {
         margin: 0 15px;
     }
 
-    /* subscribe */
+    /* -----------------------------------------------------subscribe */
     .subscribe__title {
         margin-bottom: 20px;
     }
@@ -590,7 +592,7 @@ body {
         font-size: 18px;
     }
 
-    /* copyrigh */
+    /* -----------------------------------------------------copyrigh */
     .copyrigh {
         padding: 20px 0 14px;
     }
