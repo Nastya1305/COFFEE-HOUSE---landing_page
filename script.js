@@ -23,9 +23,9 @@ let headerTop = header.offsetTop;
 
 window.onscroll = function () {
     if (window.pageYOffset > headerTop) {
-        header.classList.add("fixed");
+        header.classList.add("header_fixed");
     } else {
-        header.classList.remove("fixed");
+        header.classList.remove("header_fixed");
     }
 };
 

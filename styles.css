@@ -9,19 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-.title {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000000;
-}
-
-.title--white {
-    color: #FFFFFF;
-}
 
 .container {
     width: 100%;
@@ -37,6 +24,27 @@ body {
     height: 100%;
 }
 
+
+
+
+/* TITLE
+-----------------------------------------*/
+
+.title {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+.title_white {
+    color: #FFFFFF;
+}
+
+
 /* HEADER 
 -----------------------------------------*/
 
@@ -50,22 +58,21 @@ body {
     box-shadow: 0px 4px 7px rgba(129, 129, 129, 0.25);
 }
 
-.header.fixed {
+.header_fixed {
     position: fixed;
 
     top: 0;
     left: 0;
     z-index: 100;
-
 }
 
 /* чтобы заголовок не прыгал вверху страницы при скроле */
-.fixed+main {
+.header_fixed+main {
     /*.header[height: ]*/
     padding-top: 110px;
 }
 
-.nav {
+.header__nav {
     height: 100%;
 
     margin: auto 80px;
@@ -145,10 +152,14 @@ body {
 
 
 .story__content {
-    margin: 60px 60px 0;
+    margin: 0 60px;
 
     display: flex;
     justify-content: center;
+}
+
+.story__title {
+    margin-bottom: 60px;
 }
 
 .story__img {
@@ -187,18 +198,28 @@ body {
     background: #EFEFEF;
 }
 
-.blog__cards {
-    margin: 60px 60px 0;
+.blog__title {
+    margin-bottom: 60px;
+}
+
+.blog__content {
+    margin: 0 60px;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+.blog__card {
+    margin: 0 7px 15px;
+}
+
+/* CARD
+-----------------------------------------*/
+
 .card {
     width: 30%;
     padding: 20px;
-    margin: 0 7px 15px;
 
     background: #FFFFFF;
 }
@@ -251,10 +272,13 @@ body {
     background: #817070;
 }
 
+.subscribe__title {
+    margin-bottom: 28px;
+}
 
-.email__input {
+.subscribe__email-input {
     padding: 0.4em 1.5em;
-    margin: 28px auto 28px;
+    margin: 0 auto 28px;
 
     display: block;
 
@@ -269,7 +293,7 @@ body {
     color: #FFFFFF;
 }
 
-.email__input::placeholder {
+.subscribe__email-input::placeholder {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -278,7 +302,7 @@ body {
     color: #FFFFFF;
 }
 
-.email__input:focus {
+.subscribe__email-input:focus {
     border-color: #2A5565;
     background-color: #74A3AD;
     outline: 0;
@@ -286,7 +310,7 @@ body {
     transition: background-color 0.5s linear;
 }
 
-.submit__button {
+.subscribe__submit-button {
     display: block;
 
     padding: 0.4em 1.5em;
@@ -306,7 +330,7 @@ body {
     color: #817070;
 }
 
-.submit__button:hover {
+.subscribe__submit-button:hover {
     background-color: #bdbdbd;
     transition: background-color 0.5s linear;
 }
@@ -418,13 +442,21 @@ body {
     }
 
     /* story */
+    .story__title {
+        margin-bottom: 35px;
+    }
+
     .story__content {
-        margin: 35px 35px 0;
+        margin: 0 35px;
     }
 
     /* blog */
-    .blog__cards {
-        margin: 35px 35px 0;
+    .blog__title {
+        margin-bottom: 35px;
+    }
+
+    .blog__content {
+        margin: 0 35px;
     }
 
 }
@@ -442,7 +474,8 @@ body {
         width: 100%;
         padding-bottom: 60%;
 
-        margin: 0 0 20px;
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .story__text {
@@ -450,7 +483,7 @@ body {
     }
 
     /* blog */
-    .blog__cards {
+    .blog__content {
         justify-content: center;
     }
 
@@ -479,7 +512,7 @@ body {
 @media (max-width: 414px) {
 
     /* header */
-    .nav {
+    .header__nav {
         margin: 0 40px;
     }
 
@@ -511,7 +544,7 @@ body {
     }
 
     /* чтобы заголовок не прыгал вверху страницы при скроле */
-    .fixed+main {
+    .header_fixed+main {
         padding-top: 80px;
     }
 
@@ -526,7 +559,7 @@ body {
 
     /* story */
     .story__content {
-        margin: 30px 25px 0;
+        margin: 0 25px;
     }
 
     .story__text {
@@ -534,17 +567,25 @@ body {
     }
 
     /* blog */
-    .blog__cards {
-        margin: 30px 15px 0;
+    .blog__title {
+        margin-bottom: 30px;
+    }
+
+    .blog__content {
+        margin: 0 15px;
     }
 
     /* subscribe */
-    .email__input {
-        padding: 0.2em 0.2em;
-        margin: 20px auto 20px;
+    .subscribe__title {
+        margin-bottom: 20px;
     }
 
-    .submit__button {
+    .subscribe__email-input {
+        padding: 0.2em 0.2em;
+        margin: 0 auto 20px;
+    }
+
+    .subscribe__submit-button {
         padding: 0.2em 1em;
         font-size: 18px;
     }
