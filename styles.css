@@ -143,7 +143,6 @@ body {
 /* STORY 
 -----------------------------------------*/
 
-.story {}
 
 .story__content {
     margin: 60px 60px 0;
@@ -209,6 +208,7 @@ body {
 
     font-weight: 400;
     font-size: 24px;
+    text-transform: capitalize;
     line-height: 1.5;
     color: #000000;
 }
@@ -253,9 +253,7 @@ body {
 
 
 .email__input {
-    width: 300px;
-    height: 55px;
-
+    padding: 0.4em 1.5em;
     margin: 28px auto 28px;
 
     display: block;
@@ -291,8 +289,7 @@ body {
 .submit__button {
     display: block;
 
-    width: 129px;
-    height: 55px;
+    padding: 0.4em 1.5em;
 
     margin: 0 auto;
 
@@ -543,14 +540,12 @@ body {
 
     /* subscribe */
     .email__input {
-        width: 250px;
-        height: 45px;
+        padding: 0.2em 0.2em;
         margin: 20px auto 20px;
     }
 
     .submit__button {
-        width: 100px;
-        height: 45px;
+        padding: 0.2em 1em;
         font-size: 18px;
     }
 

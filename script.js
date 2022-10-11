@@ -1,3 +1,21 @@
+// let cardsTitles = document.getElementsByClassName("card__title");
+
+// window.onresize = function () {
+//     var maxHeightOfCardTitle = 0;
+//     //Определяем максимальную высоту блока
+//     for (var i = 0; i < cardsTitles.length; i++) {
+//         var currentHeight = cardsTitles[i].offsetHeight;
+//         if (currentHeight > maxHeightOfCardTitle) {
+//             maxHeightOfCardTitle = currentHeight;
+//         }
+//     }
+//     //Задаем максимальную высоту блока всем элементам
+//     for (var i = 0; i < cardsTitles.length; i++) {
+//         cardsTitles[i].style.height = maxHeightOfCardTitle + 'px';
+//     }
+// };
+
+
 
 //  Фиксированный заголовок
 let header = document.getElementById("header");
