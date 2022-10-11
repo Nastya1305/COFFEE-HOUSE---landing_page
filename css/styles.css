@@ -120,7 +120,7 @@ body {
     height: 625px;
     width: 100%;
 
-    background: url(img/intro-bg.jpg) center / cover;
+    background: url(../img/intro/intro-bg.jpg) center / cover;
 }
 
 .intro__text {
