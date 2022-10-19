@@ -225,6 +225,8 @@ body {
 }
 
 .card__title {
+    display: flex;
+    align-items: flex-end;
     margin-bottom: 24px;
 
     font-weight: 400;

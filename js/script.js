@@ -1,33 +1,36 @@
-// let cardsTitles = document.getElementsByClassName("card__title");
+// Изменяемая высота заголовка
+let cardsTitles = document.querySelectorAll(".card__title");
 
-// window.onresize = function () {
-//     var maxHeightOfCardTitle = 0;
-//     //Определяем максимальную высоту блока
-//     for (var i = 0; i < cardsTitles.length; i++) {
-//         var currentHeight = cardsTitles[i].offsetHeight;
-//         if (currentHeight > maxHeightOfCardTitle) {
-//             maxHeightOfCardTitle = currentHeight;
-//         }
-//     }
-//     //Задаем максимальную высоту блока всем элементам
-//     for (var i = 0; i < cardsTitles.length; i++) {
-//         cardsTitles[i].style.height = maxHeightOfCardTitle + 'px';
-//     }
-// };
+let resizeCardsTitles = function () {
+    let maxHeight = 0;
 
+    cardsTitles.forEach(cardTitle => {
+        cardTitle.style.height = "";
+        if (cardTitle.offsetHeight > maxHeight)
+            maxHeight = cardTitle.offsetHeight;
+    });
+
+    cardsTitles.forEach(item => {
+        item.style.height = maxHeight + 'px';
+    });
+};
+window.addEventListener('resize', resizeCardsTitles);
+window.addEventListener('load', resizeCardsTitles);
 
 
 //  Фиксированный заголовок
 let header = document.getElementById("header");
 let headerTop = header.offsetTop;
 
-window.onscroll = function () {
+let toggleFixedHeader = function () {
     if (window.pageYOffset > headerTop) {
         header.classList.add("header_fixed");
     } else {
         header.classList.remove("header_fixed");
     }
 };
+window.addEventListener('scroll', toggleFixedHeader);
+window.addEventListener('load', toggleFixedHeader);
 
 
 //  Выпадающий список навигации меню
